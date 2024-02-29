@@ -14,10 +14,10 @@ export const Card = ({
   return (
     <div className="card">
     
-    <h1>Gracias, {name}!</h1>
-    <h2>Tú recomendación:</h2>
-    <h3>Juego: {game}</h3>
-    <p>Consola: {console}</p>
+    <h1>Gracias {name}!</h1>
+    <h2>También amamos ese juego, será recomendado para otros:</h2>
+    <h3>{game}</h3>
+    <p>Para jugar en: {console}</p>
 </div>
   )
 }

@@ -73,7 +73,7 @@ export const Form = () => {
                 <Card name={user.name} game={user.game} console={user.console}/>           
             </>
         : <p>Cuentanos cual es tu juego favorito y en que consola es desplegado.</p>}
-        {hasError ? <p style={{color: 'red'}}>Debe colocar la información correctamente</p> : null}
+        {hasError ? <p style={{color: 'red'}}>DPor favor chequea que la información sea correcta</p> : null}
     </div>
   )
 }
