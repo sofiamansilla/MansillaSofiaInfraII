@@ -24,7 +24,7 @@ export const Form = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
    
-        if(user.name.length >= 3 && user.name[0]!=" " && user.game.length >= 6){
+        if(user.name.length >= 3 && user.name[0]!=" " && user.game.length >= 6 && user.console){
             setShowSuccess(true)
             setHasError(false)
         } else {
