@@ -24,7 +24,7 @@ export const Form = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
    
-        if(user.name.length >= 3 && user.name[0]!=" "){
+        if(user.name.length >= 3 && user.name[0]!=" " && user.game.length >= 6){
             setShowSuccess(true)
             setHasError(false)
         } else {
@@ -62,9 +62,9 @@ export const Form = () => {
         {!showSuccess &&
             <form onSubmit={handleSubmit}>
 
-                <input type="text" placeholder='name' onChange={onChangeName}/>
-                <input type="text" placeholder='game' onChange={onChangeGame} />
-                <input type="text" placeholder='console' onChange={onChangeConsole}/>
+                <input type="text" placeholder='Escribe tú nombre' onChange={onChangeName}/>
+                <input type="text" placeholder='Ingresa un videojuego' onChange={onChangeGame} />
+                <input type="text" placeholder='Ingresa la consola' onChange={onChangeConsole}/>
                 <button>Enviar</button>
             </form>
         }
@@ -72,8 +72,8 @@ export const Form = () => {
             <>
                 <Card name={user.name} game={user.game} console={user.console}/>           
             </>
-        : <p>Cuentanos cual es tu juego favorito y en que consola es desplegado.</p>}
-        {hasError ? <p style={{color: 'red'}}>DPor favor chequea que la información sea correcta</p> : null}
+        : <p className='intruction'>Cuentanos cual es tu juego favorito y en que consola es desplegado.</p>}
+        {hasError ? <p style={{color: 'red'}}>Por favor chequea que la información sea correcta</p> : null}
     </div>
   )
 }

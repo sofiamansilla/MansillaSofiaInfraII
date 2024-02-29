@@ -17,7 +17,7 @@ export const Card = ({
     <h1>Gracias {name}!</h1>
     <h2>También amamos ese juego, será recomendado para otros:</h2>
     <h3>{game}</h3>
-    <p>Para jugar en: {console}</p>
+    <p>Para jugar en la consola {console}</p>
 </div>
   )
 }

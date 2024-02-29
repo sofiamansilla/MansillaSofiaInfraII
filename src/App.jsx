@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-    <h1 className='title'>Bienvenido gamer!</h1>
+    <h1 className='title'>¡Conviértete en leyenda, Gamer!</h1>
     <Form/>                    
     </>
   )
